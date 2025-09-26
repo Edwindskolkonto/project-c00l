@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD character sheet</title>
-    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
     </header>
     <div class="container">
         <main id="right1">
-            <section id="name" class="white">
+            <div id="name" class="white">
                 <div class="name-row">
                     <span class="char-name">Adrian Darkthorn</span>
                     <span class="char-level">Level 9</span>
@@ -27,8 +27,8 @@
                     <span>Alignment: Chaotic</span>
                     <span>Age: 135</span>
                 </div>
-            </section>
-            <section id="middle2">
+            </div>
+            <div id="middle2">
                 <aside id="stats">
                     <ul class="stats-list">
                         <li><span class="stat-name">Strength</span> <span class="stat-value">9</span> | <span class="stat-mod">-1</span></li>
@@ -49,7 +49,7 @@
                         <li><span class="stat-name">Charisma</span> <span class="stat-value">14</span> | <span class="stat-mod">+2</span></li>
                     </ul>
                 </aside>
-                <section id="left3">
+                <div id="left3">
                     <div id="hp" class="white">
                         <div id="icons">
                             <div class="icon-box">
@@ -66,12 +66,12 @@
                             </div>
                         </div>
                         <div id="misc">
-                            <div id="misc-box"><p>Hit Die:</p></div>
-                            <div id="misc-box2"><p>1d8</p></div>
-                            <div id="misc-box"><p>Initiative:</p></div>
-                            <div id="misc-box2"><p>1</p></div>
-                            <div id="misc-box"><p>Passive perception:</p></div>
-                            <div id="misc-box2"><p>12</p></div>
+                            <div class="misc-box"><p>Hit Die:</p></div>
+                            <div class="misc-box2"><p>1d8</p></div>
+                            <div class="misc-box"><p>Initiative:</p></div>
+                            <div class="misc-box2"><p>1</p></div>
+                            <div class="misc-box"><p>Passive perception:</p></div>
+                            <div class="misc-box2"><p>12</p></div>
                         </div>
                     </div>
                     <div id="feats" class="white">
@@ -113,9 +113,9 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </section>
-            <section id="spellslot" class="white">
+                </div>
+            </div>
+            <div id="spellslot" class="white">
                 <div class="spellslot-row">
                 
                     <div class="spellslot-box">
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <div id="spell-list-container">
                 <div class="spell-list-small">
                     <div class="spell-list-header">Cantrips</div>
