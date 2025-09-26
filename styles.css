@@ -33,6 +33,28 @@ header {
     height: 100px;
     z-index: 1000;
 }
+.left-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#menu {
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background: var(--main-bg);
+    border: 1px solid #ff4848;
+    color:#f8b5b5;
+    background-color: orangered;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+#menu:hover {
+    background: #fd0505;
+    color: #999;
+}
 .container {
     display: flex;
     height: 120vh;
@@ -175,7 +197,7 @@ header {
     outline: auto;
     z-index: 3;
 }
-.misc-box, #misc-box2 {
+.misc-box, .misc-box2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,7 +206,7 @@ header {
     text-align: center;
     z-index: 60;
 }
-#misc-box2 { border: 1px solid black; padding: 8px 7px 4px 8px; }
+.misc-box2 { border: 1px solid black; padding: 8px 7px 4px 8px; }
 
 .feats-flex { display: flex; justify-content: space-between; align-items: flex-start; }
 .feats-list ul { margin-bottom: 0; }
