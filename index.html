@@ -4,18 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD character sheet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="logo_not_copyright.png">
         <h1>DnD Character Sheet</h1>
-        <nav>
-            <ul>
-                <li><a href="#character-info">Character Info</a></li>
-                <li><a href="#spells">Spells</a></li>
-            </ul>
-        </nav>
+        <img src="logo_not_copyright.png" width="200" height="200" alt="DnD Logo">
     </header>
+    <div class="container">
+        <main id="right1">
+            <section id="name" class="white">
+                <div class="name-row">
+                    <span class="char-name">Adrian Darkthorn</span>
+                    <span class="char-level">Level 9</span>
+                </div>
+                <div class="name-details">
+                    <span>Race: Human, Tethyrian</span>
+                    <span>Languages: Common, Abyssal, General Primordial</span>
+                    <span>Height: 6'2"</span>
+                    <span>Weight: 145lbs</span>
+                    <span>Alignment: Chaotic</span>
+                    <span>Age: 135</span>
+                </div>
+            </section>
+            <section id="middle2">
+                <aside id="stats">
+                    <ul class="stats-list">
+                        <li><span class="stat-name">Strength</span> <span class="stat-value">9</span> | <span class="stat-mod">-1</span></li>
+                        <li><span class="stat-name">Dexterity</span> <span class="stat-value">16</span> | <span class="stat-mod">+1</span></li>
+                        <li><span class="stat-name">Constitution</span> <span class="stat-value">12</span> | <span class="stat-mod">+1</span></li>
+                        <li><span class="stat-name">Intelligence</span> <span class="stat-value">16</span> | <span class="stat-mod">+3</span></li>
+                        <li>
+                            <ul class="prof-list">
+                                <li>Investigation <span class="prof-mod">+7</span></li>
+                            </ul>
+                        </li>
+                        <li><span class="stat-name">Wisdom</span> <span class="stat-value">15</span> | <span class="stat-mod">+2</span></li>
+                        <li>
+                            <ul class="prof-list">
+                                <li>Arcana <span class="prof-mod">+6</span></li>
+                            </ul>
+                        </li>
+                        <li><span class="stat-name">Charisma</span> <span class="stat-value">14</span> | <span class="stat-mod">+2</span></li>
+                    </ul>
+                </aside>
+                <section id="left3">
+                    <div id="hp" class="white">
+                        <div id="icons">
+                            <div class="icon-box">
+                                <img src="shield.png" alt="Shield" class="icon-img">
+                                <span class="icon-number">11AC</span>
+                            </div>
+                            <div class="icon-box">
+                                <img src="heart.png" alt="Heart" class="icon-img">
+                                <span class="icon-number">39HP</span>
+                            </div>
+                            <div class="icon-box">
+                                <img src="shoe.png" alt="Shoe" class="icon-shoe">
+                                <span class="icon-number">25ft</span>
+                            </div>
+                        </div>
+                        <div id="misc">
+                            <div id="misc-box"><p>Hit Die:</p></div>
+                            <div id="misc-box2"><p>1d8</p></div>
+                            <div id="misc-box"><p>Initiative:</p></div>
+                            <div id="misc-box2"><p>1</p></div>
+                            <div id="misc-box"><p>Passive perception:</p></div>
+                            <div id="misc-box2"><p>12</p></div>
+                        </div>
+                    </div>
+                    <div id="feats" class="white">
+                        <div class="prof-square prof-corner">
+                            <span class="prof-square-label">Prof</span>
+                            <span class="prof-square-value">+4</span>
+                        </div>
+                        <div class="feats-flex">
+                            <div>
+                                <strong>Feats:</strong>
+                                <ul>
+                                    <li>Lucky</li>
+                                    <li>Metamagic Adept</li>
+                                </ul>
+                                <div class="saving-throws-list">
+                                    <strong>Proficient Saving Throws:</strong>
+                                    <ul>
+                                        <li>Intelligence</li>
+                                        <li>Wisdom</li>
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="spellcasting-section">
+                            <div class="spellcasting-title"><strong>Spellcasting:</strong></div>
+                            <div class="spellcasting-row">
+                                <div class="spell-square">
+                                    <span class="spell-square-label">DC</span>
+                                    <span class="spell-square-value">15</span>
+                                </div>
+                                <div class="spell-square">
+                                    <span class="spell-square-label">Ability</span>
+                                    <span class="spell-square-value">Int</span>
+                                </div>
+                                <div class="spell-square">
+                                    <span class="spell-square-label">Mod</span>
+                                    <span class="spell-square-value">+7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="spellslot" class="white">
+                <div class="spellslot-row">
+                
+                    <div class="spellslot-box">
+                        <div class="spellslot-label">Lvl 1</div>
+                        <div class="spellslot-line"></div>
+                        <div class="spellslot-squares2">
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                        </div>
+                    </div>
+                    <div class="spellslot-box">
+                        <div class="spellslot-label">Lvl 2</div>
+                        <div class="spellslot-line"></div>
+                        <div class="spellslot-squares">
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                        </div>
+                    </div>
+                    <div class="spellslot-box">
+                        <div class="spellslot-label">Lvl 3</div>
+                        <div class="spellslot-line"></div>
+                        <div class="spellslot-squares">
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                        </div>
+                    </div>
+                    <div class="spellslot-box">
+                        <div class="spellslot-label">Lvl 4</div>
+                        <div class="spellslot-line"></div>
+                        <div class="spellslot-squares">
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                            <div class="spellslot-square"></div>
+                        </div>
+                    </div>
+                    <div class="spellslot-box">
+                        <div class="spellslot-label">Lvl 5</div>
+                        <div class="spellslot-line"></div>
+                        <div class="spellslot-squares">
+                            <div class="spellslot-square"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="spell-list-container">
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Cantrips</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:fire-bolt" target="_blank">Fire Bolt</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:create-bonfire" target="_blank">Create Bonfire</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:mage-hand" target="_blank">Mage Hand</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:prestidigitation" target="_blank">Prestidigitation</a></li>
+                    </ul>
+                </div>
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Level 1</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:false-life" target="_blank">False Life</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:magic-missile" target="_blank">Magic Missile</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:grease" target="_blank">Grease</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:ray-of-sickness" target="_blank">Ray of Sickness</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:thunderwave" target="_blank">Thunderwave</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:shield" target="_blank">Shield</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:cause-fear" target="_blank">Cause Fear</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:magnify-gravity" target="_blank">Magnify Gravity</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:chromatic-orb" target="_blank">Chromatic Orb</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:catapult" target="_blank">Catapult</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:identify" target="_blank">Identify</a></li>
+                    </ul>
+                </div>
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Level 2</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:hold-person" target="_blank">Hold Person</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:scorching-ray" target="_blank">Scorching Ray</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:flock-of-familiars" target="_blank">Flock of Familiars</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:immovable-object" target="_blank">Immovable Object</a></li>
+                    </ul>
+                </div>
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Level 3</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:fireball" target="_blank">Fireball</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:gaseous-form" target="_blank">Gaseous Form</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:fast-friends" target="_blank">Fast Friends</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:thunder-step" target="_blank">Thunder Step</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:counterspell" target="_blank">Counterspell</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:leomunds-tiny-hut" target="_blank">Leomund's Tiny Hut</a></li>
+                    </ul>
+                </div>
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Level 4</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:sickening-radiance" target="_blank">Sickening Radiance</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:raulothims-psychic-lance" target="_blank">Raulothim's Psychic Lance</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:polymorph" target="_blank">Polymorph</a></li>
+                    </ul>
+                </div>
+                <div class="spell-list-small">
+                    <div class="spell-list-header">Level 5</div>
+                    <ul class="spell-list-ul">
+                        <li><a href="https://dnd5e.wikidot.com/spell:wall-of-force" target="_blank">Wall of Force</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:hold-monster" target="_blank">Hold Monster</a></li>
+                        <li><a href="https://dnd5e.wikidot.com/spell:geas" target="_blank">Geas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <aside id="left1">
+            <div id="image" class="white"></div>
+            <div id="inventory" class="white">
+                <p>inventory</p>
+                <ul>
+                    <li>Quarter staff</li>
+                    <li>Magic ring of words</li>
+                    <li>Fancy ring</li>
+                    <li>Staff+2</li>
+                    <li>2 Dagger (1d4+2 bleed)</li>
+                    <li>1 Staff of webbing</li>
+                    <li>1 better seeing glasses</li>
+                    <li>1 Crossbow bolt</li>
+                    <li>1 beard razor</li>
+                    <li>1 strange potion</li>
+                    <li>1 res kit</li>
+                    <li>1 hink</li>
+                    <li>1 scissor</li>
+                    <li>1 soap</li>
+                    <li>2 troll blue eyes</li>
+                    <li>1 scroll of foresight</li>
+                    <li>1 flask of ?</li>
+                    <li>2 glass ball in inventory</li>
+                </ul>
+                <button id="expand-inventory-btn">
+                    Show more
+                    <span id="expand-arrow">&#9660;</span>
+                </button>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>
+
